@@ -1,6 +1,5 @@
 import React from 'react';
 import './nav.style.scss';
-import icon from '../../assets/images/hamburger-icon.png';
 import { Link } from 'react-router-dom';
 
 class Nav extends React.Component {
@@ -23,8 +22,10 @@ class Nav extends React.Component {
                 <div className="brand">
                     <span>Me.</span>
                 </div>
-                <div className="toggle" onClick={this.handleNav}>
-                    <img src={icon} alt="icon" />
+                <div className={this.state.toggleHidden === true ? "toggle" : "toggle active"} onClick={this.handleNav}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
 
                 {
