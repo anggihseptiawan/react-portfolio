@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+
+    img {
+        width: 30px;
+        height: 16px;
+        cursor: pointer;
+    }
+
+    .link {
+        position: absolute;
+        top: 45px;
+        display: flex;
+        justify-content: flex-end;
+        width: 90%;
+
+        a {
+            padding: 5px 10px;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+main.contact {
+    padding-top: 30px;
+
+    h5 {
+        font-size: 25px;
+    }
+
+    .call {
+        display: flex;
+
+        .mail,
+        .in,
+        .loc {
+            flex: 1;
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    main.contact {
+
+        h5 {
+            font-size: 15px;
+        }
+
+        p,
+        span,
+        a {
+            font-size: 13px;
+        }
+
+        .call {
+            flex-direction: column;
+        }
+    }
+}

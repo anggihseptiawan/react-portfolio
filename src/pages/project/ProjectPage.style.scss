@@ -1,0 +1,50 @@
+main.project {
+    padding-top: 20px;
+
+    h5 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .thumbnail-list {
+        display: flex;
+
+        .thumbnail {
+            padding: 10px;
+
+            span {
+                font-weight: 600;
+            }
+
+            img {
+                width: 100%;
+                margin-top: 10px;
+                border-radius: 5px;
+                border: 5px solid #5b72c1;
+                filter: brightness(70%);
+                transition: .8s filter;
+
+                &:hover {
+                    filter: brightness(100%);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    main.project {
+        h5 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .thumbnail-list {
+            flex-direction: column;
+        }
+
+        .thumbnail:last-child {
+            display: none;
+        }
+    }
+}

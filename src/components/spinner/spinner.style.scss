@@ -1,0 +1,21 @@
+.spinner {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
