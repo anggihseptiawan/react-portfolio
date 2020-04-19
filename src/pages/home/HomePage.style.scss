@@ -39,15 +39,14 @@ main.home {
 
         .image-container img {
             width: 100%;
-            filter: brightness(70%);
+            filter: brightness(45%);
         }
 
         .right-side {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80%;
+            top: 32%;
+            left: -44px;
+            width: 58%;
         }
     }
 }

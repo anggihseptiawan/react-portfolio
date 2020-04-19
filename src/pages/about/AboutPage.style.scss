@@ -38,14 +38,21 @@ main.about {
 
         .left-side,
         .right-side {
-            flex: 1 0 100%;
-            padding: 0 20px;
+            padding: 0;
 
             p.mobile-none {
                 display: none;
             }
 
             p,
+            h5 {
+                font-size: 15px;
+            }
+
+            h5 {
+                margin-bottom: 10px;
+            }
+
             ul li {
                 font-size: 13px;
             }

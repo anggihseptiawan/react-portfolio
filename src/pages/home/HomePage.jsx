@@ -16,7 +16,7 @@ const HomePage = () => (
         <div className="right-side">
             <div className="caption">
                 <h2>Welcome to my personal website</h2>
-                <p>My name is Anggih Septiawan <br /> I'm s student and i live in jakarta</p>
+                <p>My name is Anggih Septiawan <br /> I'm a student and i live in jakarta</p>
                 <Link to="/about">LEARN MORE</Link>
             </div>
         </div>
