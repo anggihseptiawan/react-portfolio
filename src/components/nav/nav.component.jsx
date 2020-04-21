@@ -18,26 +18,27 @@ class Nav extends React.Component {
 
     render() {
         return (
-            <div className="navbar">
-                <div className="brand">
-                    <span>Me.</span>
-                </div>
-                <div className={this.state.toggleHidden === true ? "toggle" : "toggle active"} onClick={this.handleNav}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+            <div className="container">
+                <div className="navbar">
+                    <div className="brand">
+                        <span>Me.</span>
+                    </div>
+                    <div className={this.state.toggleHidden === true ? "toggle" : "toggle active"} onClick={this.handleNav}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
 
-                {
-                    this.state.toggleHidden === true ?
-                        null :
-                        <div className="link">
-                            <Link to="/">Home</Link>
-                            <Link to="/about">About</Link>
-                            <Link to="/project">Project</Link>
-                            <Link to="/contact">Contact</Link>
-                        </div>
-                }
+                    {
+                        this.state.toggleHidden === true ?
+                            null :
+                            <div className="link">
+                                <Link to="/">Home</Link>
+                                <Link to="/about">About</Link>
+                                <Link to="/contact">Contact</Link>
+                            </div>
+                    }
+                </div>
             </div>
         )
 

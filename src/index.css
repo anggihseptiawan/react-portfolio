@@ -5,12 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
-  background-image: radial-gradient(#3f4f88, #19244c);
+  /* background: radial-gradient(#3f4f88, #19244c); */
+  background-color: #4d5a86;
   box-sizing: border-box;
   color: white;
 }
