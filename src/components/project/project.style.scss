@@ -1,68 +1,112 @@
-main.project {
-    margin-top: 90px;
-    padding: 70px 0;
+main.project:nth-child(2) {
+    margin-top: 240px;
+}
 
-    img {
-        width: 70%;
+img {
+    width: 70%;
+}
+
+.project_one,
+.project_two,
+.project_three {
+    position: relative;
+    margin: 90px 0;
+
+    h3.title {
+        font-size: 70px;
+        position: absolute;
+        top: -60px;
+        left: 20%;
+        margin: 0;
+        -webkit-text-stroke: 1px #4d5a86;
+        z-index: 2;
     }
 
-    .project_one,
-    .project_two,
-    .project_three {
-        position: relative;
-        margin: 90px 0;
+    .right {
+        padding-top: 90px;
+    }
 
-        h3.title {
-            font-size: 70px;
-            position: absolute;
-            top: -60px;
-            left: 20%;
-            margin: 0;
-            -webkit-text-stroke: 1px #4d5a86;
+    h1 {
+        position: absolute;
+        right: 10px;
+        font-size: 160px;
+        opacity: .08;
+        transform: rotate(90deg);
+        top: 150px;
+    }
+
+    a {
+        width: 130px;
+        height: 130px;
+        border: 1px solid aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: absolute;
+        top: 40%;
+        right: 22%;
+        transition: background-color .5s ease;
+
+        &:hover {
+            background-color: #6184f9;
         }
 
-        h1 {
-            position: absolute;
-            right: 10px;
-            font-size: 160px;
-            opacity: .08;
-            transform: rotate(90deg);
-            top: 150px;
+        &:hover span {
+            letter-spacing: unset;
+            margin: unset;
         }
 
-        a {
-            width: 130px;
-            height: 130px;
-            border: 1px solid aliceblue;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            position: absolute;
-            top: 40%;
-            right: 22%;
-            transition: background-color .5s ease;
-
-            &:hover {
-                background-color: #6184f9;
-            }
-
-            &:hover span {
-                letter-spacing: unset;
-                margin: unset;
-            }
-
-            span {
-                font-size: 20px;
-                letter-spacing: 6px;
-                display: block;
-                margin: 0 -50px;
-                transition: all .5s ease;
-                animation: infiniteRotate 8s linear infinite;
-            }
+        span {
+            font-size: 20px;
+            letter-spacing: 6px;
+            display: block;
+            margin: 0 -50px;
+            transition: all .5s ease;
+            animation: infiniteRotate 8s linear infinite;
         }
     }
 }
+
+
+@media (max-width: 576px) {
+    main.project:nth-child(2) {
+        margin-top: 80px;
+    }
+
+    .project_one, .project_two, .project_three {
+        margin: 0;
+
+        h3.title {
+            font-size: 30px;
+            top: -20px;
+            left: 15%;
+        }
+
+        h1 {
+            right: -10px;
+            font-size: 70px;
+            top: -12px;
+        }
+
+        a {
+            width: 105px;
+            height: 105px;
+            right: 14%;
+
+            span {
+                font-size: 18px;
+                letter-spacing: 3px;
+            }
+        }
+
+        img {
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+}
+
 
 
 @keyframes infiniteRotate {
