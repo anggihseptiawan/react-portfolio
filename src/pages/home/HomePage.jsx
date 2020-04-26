@@ -23,7 +23,7 @@ const HomePage = () => (
                 </Fade>
             </header>
         </div>
-        <ProjectComponent className="project_one" title="LENOVO LEGION" img="imgLenovo" href="https://lenovo.legion.com" number="01" />
+        <ProjectComponent className="project_one" title="LENOVO LEGION" img="imgLenovo" href="https://legion.lenovo.com" number="01" />
         <ProjectComponent className="project_two" title="COFFEE FARM" img="imgCoffee" href="https://myskripsi.id/kopi-kita" number="02" />
         <ProjectComponent className="project_three" title="K.O.C PLAY" img="imgKocplay" href="http://kocplay.com" number="03" />
         <div className="more">
