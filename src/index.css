@@ -9,7 +9,8 @@ body {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 0;
-	background: radial-gradient(#333867, #17193b);
+	/* background: radial-gradient(#3f4f88, #19244c); */
+	background-color: #333867;
 	box-sizing: border-box;
 	color: white;
 }
