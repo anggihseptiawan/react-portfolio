@@ -1,97 +1,93 @@
 header.about {
-    display: flex;
-    justify-content: center;
-    padding: 40px 0;
-    position: relative;
+	display: flex;
+	justify-content: center;
+	padding: 40px 0;
+	position: relative;
 
-    img {
-        width: 30%;
-        filter: brightness(80%);
-    }
+	img {
+		width: 30%;
+		filter: brightness(80%);
+	}
 
-    h1 {
-        position: absolute;
-        top: 30%;
-        font-size: 70px;
-    }
+	h1 {
+		position: absolute;
+		top: 30%;
+		font-size: 70px;
+	}
 }
 
 main.about {
-    display: flex;
-    padding-bottom: 40px;
+	display: flex;
+	padding-bottom: 40px;
 
-    .left-side,
-    .right-side {
-        flex: 1;
-    }
+	.left-side,
+	.right-side {
+		flex: 1;
+	}
 
-    a {
-        padding: 10px 25px;
-        border-radius: 3px;
-        background: #f2f084;
-        color: black;
-        margin-top: 15px;
-        display: inline-block;
-        box-shadow: 0px 0px 3px #fbe987;
+	a {
+		padding: 10px 25px;
+		border-radius: 3px;
+		background: linear-gradient(#ffda67, #ffb944);
+		color: black;
+		margin-top: 15px;
+		display: inline-block;
 
-        &:hover {
-            background-color: #f4f397;
-        }
-    }
+		&:hover {
+			background-color: #f9b63b;
+		}
+	}
 
-    .left-side {
-        padding: 0 20px;
-    }
+	.left-side {
+		padding: 0 20px;
+	}
 
-    .right-side {
-        padding: 0 20px;
+	.right-side {
+		padding: 0 20px;
 
-        ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
+		ul {
+			display: flex;
+			list-style: none;
+			padding: 0;
+			margin: 0;
 
-            .one,
-            .two {
-                padding-right: 70px;
-            }
-        }
-    }
-
+			.one,
+			.two {
+				padding-right: 70px;
+			}
+		}
+	}
 }
 
+@media (max-width: 576px) {
+	header.about {
+		img {
+			width: 70%;
+			height: 55vh;
+		}
 
+		h1 {
+			top: 36%;
+			font-size: 32px;
+		}
+	}
 
-@media(max-width: 576px) {
-    header.about {
-        img {
-            width: 70%;
-            height: 55vh;
-        }
+	main.about {
+		flex-direction: column;
+	}
 
-        h1 {
-            top: 36%;
-            font-size: 32px;
-        }
-    }
+	.left-side,
+	.right-side {
+		padding: 0 !important;
 
-    main.about {
-        flex-direction: column;
-    }
+		h1 {
+			font-size: 23px;
+		}
 
-    .left-side,
-    .right-side {
-        padding: 0 !important;
-
-        h1 {
-            font-size: 23px;
-        }
-
-        .one,
-        .two {
-            width: 50%;
-            padding-right: 20px !important;
-        }
-    }
+		.one,
+		.two {
+			width: 50%;
+			padding-right: 20px !important;
+		}
+	}
 }

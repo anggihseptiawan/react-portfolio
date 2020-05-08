@@ -1,69 +1,72 @@
 main.home {
-    header.hero-section {
-        padding-top: 50px;
+	header.hero-section {
+		padding-top: 50px;
 
-        h1 {
-            font-size: 80px;
-            color: white;
-            margin: 0;
-        }
+		h1 {
+			font-size: 80px;
+			color: white;
+			margin: 0;
+		}
 
-        h1.middle,
-        h1.bottom {
-            margin-top: -30px;
-        }
+		h1.middle,
+		h1.bottom {
+			margin-top: -30px;
+		}
 
-        p.tagline {
-            font-size: 20px;
-            font-weight: 550;
+		p.tagline {
+			font-size: 20px;
+			font-weight: 550;
 
-            span {
-                border-bottom: 1px solid white;
-            }
-        }
+			span {
+				border-bottom: 1px solid white;
+			}
+		}
 
-        small {
-            display: block;
-            margin-top: 180px;
-            color: rgba($color: #ffffff, $alpha: .8);
-        }
-    }
+		small {
+			display: block;
+			margin-top: 180px;
+			color: rgba($color: #ffffff, $alpha: 0.8);
+		}
+	}
 
-    .more {
-        padding-bottom: 220px;
+	.more {
+		padding-bottom: 220px;
 
-        h1 {
-            font-size: 70px;
-            text-align: center;
-            color: transparent;
-            -webkit-text-stroke: 2px white;
-            transition: color .5s ease;
+		h1 {
+			font-size: 70px;
+			text-align: center;
+			color: transparent;
+			-webkit-text-stroke: 2px white;
+			transition: color 0.5s ease;
 
-            &:hover {
-                color: white;
-            }
-        }
-    }
-
+			&:hover {
+				color: white;
+			}
+		}
+	}
 }
 
-@media(max-width: 500px) {
-    main.home {
-        header.hero-section {
-            padding-top: 85px;
+@media (max-width: 500px) {
+	main.home {
+		header.hero-section {
+			padding-top: 85px;
 
-            h1 {
-                font-size: 25px;
-                margin: unset !important;
-            }
+			h1 {
+				font-size: 25px;
+				margin: unset !important;
+			}
 
-            p.tagline {
-                font-size: 18px;
-            }
-        }
+			p.tagline {
+				font-size: 18px;
+			}
 
-        .more {
-            padding-bottom: 50px;
-        }
-    }
+			small {
+				margin-top: 200px;
+			}
+		}
+
+		.more {
+			padding-bottom: 50px;
+		}
+	}
 }
