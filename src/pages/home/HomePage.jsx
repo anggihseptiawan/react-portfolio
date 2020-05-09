@@ -10,7 +10,7 @@ const HomePage = () => (
             <header className="hero-section">
                 <Fade bottom cascade>
                     <h1 className="top">A STUDENT</h1>
-                    <h1 className="middle">FRONTENT DEVELOPER</h1>
+                    <h1 className="middle">FRONTEND DEVELOPER</h1>
                     <h1 className="bottom">TECH ENTUSIAST</h1>
                 </Fade>
 
