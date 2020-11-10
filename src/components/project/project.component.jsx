@@ -1,6 +1,6 @@
 import React from 'react';
 import imgLenovo from '../../assets/images/pro_1.png';
-import imgCoffee from '../../assets/images/pro_2.png';
+import imgClothshop from '../../assets/images/pro_4.png';
 import imgKocplay from '../../assets/images/pro_3.png';
 import './project.style.scss';
 import Zoom from 'react-reveal/Zoom';
@@ -13,7 +13,7 @@ export const ProjectComponent = ({ className, title, img, href, number }) => (
                 <h3 className="title">{title}</h3>
             </Fade>
             <Zoom duration="2000">
-                <img src={img === 'imgLenovo' ? imgLenovo : null || img === 'imgCoffee' ? imgCoffee : null || img === 'imgKocplay' ? imgKocplay : null } alt="images" />
+                <img src={img === 'imgLenovo' ? imgLenovo : null || img === 'imgClothshop' ? imgClothshop : null || img === 'imgKocplay' ? imgKocplay : null } alt="images" />
             </Zoom>
 
             <a href={href}><span>view project</span></a>
