@@ -15,11 +15,12 @@ img {
 	h3.title {
 		font-size: 70px;
 		position: absolute;
-		top: -60px;
-		left: 20%;
+		top: -90px;
+		left: 40px;
 		margin: 0;
-		-webkit-text-stroke: 1px #4d5a86;
+		// -webkit-text-stroke: 1px #4d5a86;
 		z-index: 2;
+		color: #00ffcc;
 	}
 
 	.right {
@@ -35,10 +36,17 @@ img {
 		top: 150px;
 	}
 
+	p {
+		margin-left: 40px;
+		max-width: 400px;
+		color: rgba($color: #fff, $alpha: 0.8);
+		font-size: 17px;
+	}
+
 	a {
 		width: 130px;
 		height: 130px;
-		border: 1px solid aliceblue;
+		border: 1px solid #00ffcc;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -47,6 +55,7 @@ img {
 		top: 40%;
 		right: 22%;
 		transition: background-color 0.5s ease;
+		color: #00ffcc;
 
 		&:hover {
 			background-color: #474d84;
@@ -80,8 +89,13 @@ img {
 
 		h3.title {
 			font-size: 30px;
-			top: -20px;
-			left: 15%;
+			top: -40px;
+			left: 20px;
+		}
+
+		p {
+			margin-left: 20px;
+			max-width: 300px;
 		}
 
 		h1 {

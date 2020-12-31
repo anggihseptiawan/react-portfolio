@@ -5,6 +5,8 @@
 
 	.brand span {
 		font-size: 25px;
+		font-family: "Sulphur Point", sans-serif;
+		font-weight: bold;
 	}
 
 	.toggle {
@@ -77,6 +79,9 @@
 		padding: 8px 15px;
 
 		a {
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+				"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+				"Helvetica Neue", sans-serif;
 			font-size: 80px;
 			padding: 5px 10px;
 			color: transparent;

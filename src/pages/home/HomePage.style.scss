@@ -1,6 +1,12 @@
 main.home {
+	transition: transform 0.5s;
+	will-change: transform;
+
 	header.hero-section {
-		padding-top: 50px;
+		min-height: 85vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 
 		h1 {
 			font-size: 80px;
@@ -18,14 +24,9 @@ main.home {
 			font-weight: 550;
 
 			span {
-				border-bottom: 1px solid white;
+				border-bottom: 1px solid #00ffcc;
+				color: #00ffcc;
 			}
-		}
-
-		small {
-			display: block;
-			margin-top: 180px;
-			color: rgba($color: #ffffff, $alpha: 0.8);
 		}
 	}
 
@@ -49,10 +50,8 @@ main.home {
 @media (max-width: 500px) {
 	main.home {
 		header.hero-section {
-			padding-top: 85px;
-
 			h1 {
-				font-size: 25px;
+				font-size: 29px;
 				margin: unset !important;
 			}
 
@@ -66,7 +65,12 @@ main.home {
 		}
 
 		.more {
-			padding-bottom: 50px;
+			padding-bottom: 80px;
+
+			h1 {
+				font-size: 34px;
+				-webkit-text-stroke: 1px white;
+			}
 		}
 	}
 }

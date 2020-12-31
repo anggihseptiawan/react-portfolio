@@ -21,7 +21,28 @@ a {
 	color: white;
 }
 
+h1 span {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+}
+
+p,
+a,
+small,
+ul {
+	font-family: "Sulphur Point", sans-serif;
+}
+
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 		monospace;
+}
+
+.text-teal {
+	color: #00ffcc;
+}
+
+.mt-0 {
+	margin-top: 0;
 }
