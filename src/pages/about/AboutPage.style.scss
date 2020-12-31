@@ -3,12 +3,15 @@ main.about {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
+	min-height: 110vh;
 
 	img {
 		width: 30%;
 		filter: brightness(90%);
 		border-top-right-radius: 8px;
 		border-bottom-right-radius: 8px;
+		object-fit: cover;
+		height: 95vh;
 	}
 
 	.details {
