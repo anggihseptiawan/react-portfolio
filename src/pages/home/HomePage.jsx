@@ -64,9 +64,9 @@ const HomePage = () => {
 			/>
 			<ProjectComponent
 				className="project_three"
-				title="K.O.C PLAY"
-				img="imgKocplay"
-				href="https://kocplay.com/"
+				title="K.S"
+				img="imgKS"
+				href="https://kabarsukabumi.com/"
 				number="03"
 			/>
 

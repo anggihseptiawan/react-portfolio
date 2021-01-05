@@ -16,7 +16,7 @@ img {
 		font-size: 70px;
 		position: absolute;
 		top: -90px;
-		left: 40px;
+		// left: 40px;
 		margin: 0;
 		// -webkit-text-stroke: 1px #4d5a86;
 		z-index: 2;
@@ -37,7 +37,7 @@ img {
 	}
 
 	p {
-		margin-left: 40px;
+		// margin-left: 40px;
 		max-width: 400px;
 		color: rgba($color: #fff, $alpha: 0.8);
 		font-size: 17px;
@@ -90,12 +90,10 @@ img {
 		h3.title {
 			font-size: 30px;
 			top: -40px;
-			left: 20px;
 		}
 
 		p {
-			margin-left: 20px;
-			max-width: 300px;
+			max-width: 295px;
 		}
 
 		h1 {
@@ -108,6 +106,7 @@ img {
 			width: 105px;
 			height: 105px;
 			right: 14%;
+			top: 30%;
 
 			span {
 				font-size: 18px;

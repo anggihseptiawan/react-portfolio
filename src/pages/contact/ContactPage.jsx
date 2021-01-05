@@ -6,9 +6,7 @@ const ContactPage = () => (
 	<main className="contact">
 		<div className="container">
 			<Fade bottom>
-				<h1>
-					LET ME KNOW YOUR PROBLEM, <br /> I'M GLAD TO HEAR THAT.
-				</h1>
+				<h1>LET ME KNOW YOUR PROBLEM.</h1>
 			</Fade>
 			<Fade bottom delay="500">
 				<h5>Reach Me Out</h5>
