@@ -37,10 +37,11 @@ main.about {
 
 		img {
 			width: 70%;
-			height: 45vh;
+			height: 55vh;
 			margin: 0 auto;
 			border-radius: 8px;
 			object-fit: cover;
+			object-position: bottom;
 		}
 
 		.details {
