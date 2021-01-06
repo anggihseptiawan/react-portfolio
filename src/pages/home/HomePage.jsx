@@ -64,7 +64,7 @@ const HomePage = () => {
 			/>
 			<ProjectComponent
 				className="project_three"
-				title="K.S"
+				title="NEWS PORTAL"
 				img="imgKS"
 				href="https://kabarsukabumi.com/"
 				number="03"
