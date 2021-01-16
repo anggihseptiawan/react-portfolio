@@ -1,6 +1,23 @@
 {
+	"home": "BERANDA",
+	"about": "TENTANG",
+	"contact": "KONTAK",
 	"firstTitle": "MAHASISWA",
 	"secondTitle": "PENGEMBANG FRONTEND",
 	"thirdTitle": "PENGGEMAR TEKNOLOGI",
-	"subtitle": "Saya membuat sesuatu yang keren, terutama website"
+	"subtitle": "Saya membuat sesuatu yang <span>keren</span>, terutama <span>website</span>",
+	"view": "lihat proyek",
+	"lenovo": "Website resmi lenovo legion, ini adalah proyek saya di perusahaan tempat saya bekerja sebelumnya, di 2019",
+	"clothshop": "Website ecommerce sederhana, untuk menerapkan pengetahuan saya di reactjs",
+	"news": "Website portal berita, ini adalah proyek sampingan saya dengan teman saya, dibangun pada juni 2020",
+	"more": "LEBIH TENTANG SAYA ?",
+	"aboutTitle": "Hi 👋 Anggih Septiawan disini, saya seorang frontend developer berbasis di jakarta",
+	"firstDesc": "Saya mulai terjun ke pengembangan web ketika saya belajar sendiri HTML dan CSS pada tahun 2018, Saat ini saya terus membuat website, baik secara profesional maupun sebagai hobi.",
+	"secondDesc": "Saya telah mempelajari banyak hal, tidak hanya frontend, saya juga belajar backend, seperti php dan frameworknya seperti codeigniter dan laravel. Saat ini saya kuliah di Universitas Pradita (Teknologi Informasi). Saya bekerja di sebuah perusahaan software house yang berbasis di Jakarta, dan melakukan beberapa proyek sampingan.",
+	"thirdDesc": "Untuk pertanyaan bisnis, kirim email ke <span class='text-teal'>anggihseptiawan@gmail.com</span>",
+	"tech": "Teknologi",
+	"techstack": "Berikut adalah beberapa teknologi yang saya gunakan dan yang sedang saya pelajari untuk membangun website",
+	"contactTitle": "BERI TAU MASALAH ANDA.",
+	"contactSub": "Hubungi Saya",
+	"contactText": "Mari kita membangun sesuatu yang hebat bersama. Jika Anda ingin memulai proyek baru, membutuhkan bantuan dengan proyek yang sudah ada atau memiliki pertanyaan lain, silakan hubungi saya."
 }

@@ -1,20 +1,21 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
+import { useTranslation } from "react-i18next";
+
 import imgLenovo from "../../assets/images/pro_1.png";
 import imgKS from "../../assets/images/ks.png";
 import imgClothshop from "../../assets/images/pro_4.png";
 import "./project.style.scss";
 
 export const ProjectComponent = ({ className, title, img, href, number }) => {
+	const { t } = useTranslation();
+
 	const Description = () => {
 		if (img === "imgLenovo") {
 			return (
 				<div className="desc container">
-					<p>
-						Official website for lenovo legion, this is my project
-						at my previous company in 2019
-					</p>
+					<p>{t("lenovo")}</p>
 					<p>
 						<span className="text-teal">Tech stack :</span>{" "}
 						Bootstrap, SlickJS & Laravel
@@ -24,10 +25,7 @@ export const ProjectComponent = ({ className, title, img, href, number }) => {
 		} else if (img === "imgClothshop") {
 			return (
 				<div className="desc container">
-					<p>
-						Some fun ecommerce website for implementing my knowledge
-						in reactjs
-					</p>
+					<p>{t("clothshop")}</p>
 					<p>
 						<span className="text-teal">Tech stack :</span> ReactJS,
 						Redux, Firebase & NodeSass
@@ -37,10 +35,7 @@ export const ProjectComponent = ({ className, title, img, href, number }) => {
 		} else {
 			return (
 				<div className="desc container">
-					<p>
-						Some freelance project with my friend, build in june
-						2020
-					</p>
+					<p>{t("news")}</p>
 					<p>
 						<span className="text-teal">Tech stack :</span>{" "}
 						Bootstrap, Owl Carousel, & Laravel
@@ -75,7 +70,7 @@ export const ProjectComponent = ({ className, title, img, href, number }) => {
 				<Description />
 
 				<a href={href} target="_blank" rel="noopener noreferrer">
-					<span>view project</span>
+					<span>{t("view")}</span>
 				</a>
 
 				<div className="right">

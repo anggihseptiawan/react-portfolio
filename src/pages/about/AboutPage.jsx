@@ -1,9 +1,13 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import { useTranslation } from "react-i18next";
+
 import imgProfile from "../../assets/images/profile2.jpg";
 import "./AboutPage.style.scss";
 
 const AboutPage = () => {
+	const { t } = useTranslation();
+
 	return (
 		<>
 			<main className="about">
@@ -12,44 +16,19 @@ const AboutPage = () => {
 				</Fade>
 				<div className="details">
 					<Fade bottom>
-						<h1>
-							Hi{" "}
-							<span role="img" aria-label="some-emoji">
-								👋
-							</span>{" "}
-							Anggih Septiawan here, i'm a frontend developer
-							based in jakarta
-						</h1>
+						<h1>{t("aboutTitle")}</h1>
 					</Fade>
 					<Fade bottom>
-						<p>
-							I started getting into web development when I
-							self-learned HTML and CSS in 2018, Nowadays I
-							continue to build web stuff, both professionally and
-							as a hobby.
-						</p>
-						<p>
-							I've learn many things, not just a frontend, i also
-							learn backend, like php and their framework such as
-							codeigniter and laravel. Currently, i'm studying at
-							Pradita University (Information Technology). I work
-							at a software house company based in jakarta, and
-							doing some side projects.
-						</p>
-						<p>
-							For business inquiries, drop mail at
-							<span className="text-teal">
-								&nbsp;anggihseptiawan@gmail.com
-							</span>
-						</p>
+						<p>{t("firstDesc")}</p>
+						<p>{t("secondDesc")}</p>
+						<p
+							dangerouslySetInnerHTML={{ __html: t("thirdDesc") }}
+						/>
 					</Fade>
 
 					<Fade bottom>
-						<h1>Tech Stack</h1>
-						<p className="mt-0">
-							Here are some tech stack that i use and i'm
-							currently learning for building website
-						</p>
+						<h1>{t("tech")}</h1>
+						<p className="mt-0">{t("techstack")}</p>
 					</Fade>
 					<ul>
 						<div className="one">

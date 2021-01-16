@@ -43,10 +43,10 @@ const HomePage = () => {
 					</Fade>
 
 					<Fade delay="1000">
-						<p className="tagline">
-							I create something <span> awesome</span>, especially{" "}
-							<span>website</span>
-						</p>
+						<p
+							className="tagline"
+							dangerouslySetInnerHTML={{ __html: t("subtitle") }}
+						/>
 					</Fade>
 				</header>
 			</div>
@@ -75,7 +75,7 @@ const HomePage = () => {
 			<div className="more">
 				<Link to="/about">
 					<Fade bottom cascade delay="500">
-						<h1>MORE ABOUT ME ?</h1>
+						<h1>{t("more")}</h1>
 					</Fade>
 				</Link>
 			</div>

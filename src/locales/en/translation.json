@@ -1,6 +1,23 @@
 {
+	"home": "HOME",
+	"about": "ABOUT",
+	"contact": "CONTACT",
 	"firstTitle": "A STUDENT",
 	"secondTitle": "FRONTEND DEVELOPER",
 	"thirdTitle": "TECH ENTHUSIAST",
-	"subtitle": "I create something awesome, especially website"
+	"subtitle": "I create something <span>cool</span>, especially <span>website</span>",
+	"view": "view project",
+	"lenovo": "Official website for lenovo legion, this is my project at the company that I worked for before, in 2019",
+	"clothshop": "Simple ecommerce website for implementing my knowledge in reactjs",
+	"news": "News portal website, this is my side project with my friend, build in june 2020",
+	"more": "MORE ABOUT ME ?",
+	"aboutTitle": "Hi 👋 Anggih Septiawan here, i'm a frontend developer based in jakarta",
+	"firstDesc": "I started getting into web development when I self-learned HTML and CSS in 2018, Nowadays I continue to build web stuff, both professionally and as a hobby.",
+	"secondDesc": "I've learn many things, not just a frontend, i also learn backend, like php and their framework such as codeigniter and laravel. Currently, i'm studying at Pradita University (Information Technology). I work at a software house company based in jakarta, and doing some side projects.",
+	"thirdDesc": "For business inquiries, drop mail at <span class='text-teal'>anggihseptiawan@gmail.com</span>",
+	"tech": "Tech Stack",
+	"techstack": "Here are some tech stack that i use and i'm currently learning for building website",
+	"contactTitle": "LET ME KNOW YOUR PROBLEM.",
+	"contactSub": "Reach Me Out",
+	"contactText": "Let's build something great together. If you'd like to start a new project, need help with an existing project or have any other enquiry, please get in touch."
 }

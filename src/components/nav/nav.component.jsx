@@ -9,6 +9,7 @@ import Zoom from "react-reveal/Zoom";
 const Nav = () => {
 	const [toggleHidden, setToggleHidden] = useState(true);
 	const nav = useRef(null);
+	const { t } = useTranslation();
 
 	const handleNav = () => {
 		setToggleHidden(!toggleHidden);
@@ -72,17 +73,17 @@ const Nav = () => {
 					<div className="link">
 						<Fade bottom delay="500">
 							<Link to="/" onClick={handleNav}>
-								HOME
+								{t("home")}
 							</Link>
 						</Fade>
 						<Fade bottom delay="800">
 							<Link to="/about" onClick={handleNav}>
-								ABOUT
+								{t("about")}
 							</Link>
 						</Fade>
 						<Fade bottom delay="1000">
 							<Link to="/contact" onClick={handleNav}>
-								CONTACT
+								{t("contact")}
 							</Link>
 						</Fade>
 					</div>
