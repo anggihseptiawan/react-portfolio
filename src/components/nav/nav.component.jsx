@@ -1,6 +1,8 @@
 import React, { useState, useRef } from "react";
-import "./nav.style.scss";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
+import "./nav.style.scss";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 
@@ -10,6 +12,19 @@ const Nav = () => {
 
 	const handleNav = () => {
 		setToggleHidden(!toggleHidden);
+	};
+
+	const { i18n } = useTranslation();
+
+	const changeLanguage = (e) => {
+		const code = e.target?.textContent
+			.toLowerCase()
+			.replace(/\s/g, "")
+			.replace(/[^a-zA-Z]/g, "");
+		console.log(code);
+		if (i18n.language !== code) {
+			i18n.changeLanguage(code);
+		}
 	};
 
 	window.addEventListener("scroll", () => {
@@ -28,8 +43,16 @@ const Nav = () => {
 		<div className="navbar" ref={nav}>
 			<div className="container">
 				<Fade delay="1500">
-					<div className="brand">
+					<Link to="/" className="brand">
 						<span className="text-teal">asdevv.</span>
+					</Link>
+					<div className="lang">
+						<span className="text-teal" onClick={changeLanguage}>
+							EN&nbsp; | &nbsp;
+						</span>
+						<span className="text-teal" onClick={changeLanguage}>
+							ID
+						</span>
 					</div>
 					<div
 						className={

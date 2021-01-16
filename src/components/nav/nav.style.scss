@@ -9,6 +9,12 @@
 		display: flex;
 		justify-content: space-between;
 		padding: 25px 0;
+		align-items: center;
+	}
+
+	.lang span {
+		cursor: pointer;
+		font-weight: bold;
 	}
 
 	&.fixed {
@@ -39,7 +45,7 @@
 			display: block;
 			width: 20px;
 			height: 3px;
-			background: white;
+			background: #00ffcc;
 			transition: all 0.5s;
 			transform-origin: 0 0;
 		}
@@ -48,7 +54,7 @@
 			display: block;
 			width: 30px;
 			height: 3px;
-			background: white;
+			background: #00ffcc;
 			transition: all 0.5s;
 		}
 
@@ -56,7 +62,7 @@
 			display: block;
 			width: 25px;
 			height: 3px;
-			background: white;
+			background: #00ffcc;
 			transition: all 0.5s;
 			transform-origin: 0 0;
 		}

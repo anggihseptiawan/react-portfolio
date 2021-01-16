@@ -29,8 +29,8 @@ const AboutPage = () => {
 							as a hobby.
 						</p>
 						<p>
-							I've learn many things, not just a frontend, i learn
-							a backend too, like php and their framework such as
+							I've learn many things, not just a frontend, i also
+							learn backend, like php and their framework such as
 							codeigniter and laravel. Currently, i'm studying at
 							Pradita University (Information Technology). I work
 							at a software house company based in jakarta, and

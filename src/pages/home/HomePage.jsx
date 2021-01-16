@@ -3,9 +3,11 @@ import "./HomePage.style.scss";
 import { ProjectComponent } from "../../components/project/project.component";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
+import { useTranslation } from "react-i18next";
 
 const HomePage = () => {
 	const main = useRef(null);
+	const { t } = useTranslation();
 
 	useEffect(() => {
 		if (main.current !== null) {
@@ -35,9 +37,9 @@ const HomePage = () => {
 			<div className="container">
 				<header className="hero-section">
 					<Fade bottom cascade>
-						<h1 className="top">A STUDENT</h1>
-						<h1 className="middle">FRONTEND DEVELOPER</h1>
-						<h1 className="bottom">TECH ENTUSIAST</h1>
+						<h1 className="top">{t("firstTitle")}</h1>
+						<h1 className="middle">{t("secondTitle")}</h1>
+						<h1 className="bottom">{t("thirdTitle")}</h1>
 					</Fade>
 
 					<Fade delay="1000">
