@@ -1,39 +1,15 @@
-import React, { useRef, useEffect } from "react";
-import "./HomePage.style.scss";
-import { ProjectComponent } from "../../components/project/project.component";
-import { Link } from "react-router-dom";
-import Fade from "react-reveal/Fade";
+import React from "react";
 import { useTranslation } from "react-i18next";
+import Fade from "react-reveal/Fade";
+import { Link } from "react-router-dom";
+import { ProjectComponent } from "../../components/project/project.component";
+import "./HomePage.style.scss";
 
 const HomePage = () => {
-	const main = useRef(null);
 	const { t } = useTranslation();
 
-	useEffect(() => {
-		if (main.current !== null) {
-			let currentPixel = window.pageYOffset;
-
-			// looper keeps running and keeps track of where the new pixel is
-			const looper = function () {
-				const newPixel = window.pageYOffset;
-				const diff = newPixel - currentPixel;
-				const speed = diff * 0.15;
-
-				if (main.current !== null) {
-					main.current.style.transform = "skewY(" + speed + "deg)";
-				}
-
-				currentPixel = newPixel;
-
-				requestAnimationFrame(looper);
-			};
-
-			looper();
-		}
-	}, [main]);
-
 	return (
-		<main className="home" ref={main}>
+		<main className="home">
 			<div className="container">
 				<header className="hero-section">
 					<Fade bottom cascade>
